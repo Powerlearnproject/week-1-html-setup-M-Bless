@@ -1,1 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXPENSE TRACKER</title>
+<style>
+    img {
+        border-radius: 50%;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body {
+        background-color:#E0FFFF;
+        box-shadow:  10px 10px 5px lightslategray inset; 
+
+    }
+    td{
+      text-align:center;
+    }
+</style>
+</head>
+<body>
+    <h1>EXPENSE TRACKER</h1>
+    <form>
+        <label for="fname"><b>First Name:</b></label>
+        <input type="text" id="fname" name="fname" placeholder="Enter fname">
+        <label for="lname"><b>Last Name:</b></label>
+        <input type="text" id="lname" name="fname" placeholder="Enter lname">
+        <br>
+        <br>
+        <label for="email"><b>Email:</b></label>
+        <input type="text" id="email" name="email" placeholder="example@gmail.com">
+        <label for="phone"><b>Phone Number:</b></label>
+        <input type="text" id="phone" name="phone" placeholder="Enter phone number">
+        <br>
+        <br>
+    </form>
+    <table border="1" cellspacing="2" cellpadding="5" height="100%" width="50%">
+        <caption><b>User Information</b></caption>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td>Mercy Johnsons</td>
+            <td>wmercy@kabarak.ac.ke</td>
+            <td>0732449852</td>
+        </tr>
+    </table>
+    <br>
+    <img src="img_profile.jpg" alt="User's Profile" width="150" height="100">
+    <span><i><b>User's Profile</b></i></span>
+    <br>
+    <br>
+    <p><b><u>Fill below to track your expense</u></b></p>
+    <form action="/action_page.php">
+        <input type="text" name="name" placeholder="Expense name">
+        <input type="text" name="Amount" placeholder="Amount">
+        <input type="submit" value="Add Expense">
+    </form>
+    <br>
+    <br>
+    <table border="1" cellspacing="0" cellpaddig="2" height="100%" width="50%">
+        <tr>
+            <th>Expense Name</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>1000</td>
+            <td><b><u>Delete</u></b></td>
+        </tr>
+        <tr>
+            <td>Transport</td>
+            <td>2000</td>
+            <td><b><u>Delete</u></b></td>
+        </tr>
+        <tr>
+            <td>Entertainment</td>
+            <td>3000</td>
+            <td><b><u>Delete</u></b></td>
+        </tr>
+        <tr>
+            <td>Others</td>
+            <td>4000</td>
+            <td><b><u>Delete</u></b></td>
+        </tr>
+        <tr>
+            <td><strong>Total:</strong></td> 
+            
+            <td><b>10000</b></td>
+            <td></td>
+    
+        </tr>
+    </table>
+</body>
+</html>
